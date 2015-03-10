@@ -1,9 +1,9 @@
 @echo off
-title cm12Ö÷ÌâÍ¼±êÒÆÖ²(miui)
+title cm12ä¸»é¢˜å›¾æ ‡ç§»æ¤(miui)
 echo.
-echo ÕıÔÚÒÆÖ²miuiÖ÷ÌâÍ¼±ê
+echo æ­£åœ¨ç§»æ¤miuiä¸»é¢˜å›¾æ ‡
 echo ...................
-echo ³õÊ¼»¯
+echo åˆå§‹åŒ–
 echo ...................
 :init
 
@@ -22,7 +22,7 @@ tools\7z x %1 -omiui_tmp\ >nul
 tools\7z x miui_tmp\icons -omiui_tmp\.icons >nul
 
 :wallpapers_port
-echo ÒÆÖ²±ÚÖ½ÖĞ
+echo ç§»æ¤å£çº¸ä¸­
 echo ...................
 copy miui_tmp\wallpaper\default_wallpaper.jpg assert\wallpapers\ >nul
 copy miui_tmp\wallpaper\default_wallpaper.png assert\wallpapers\ >nul
@@ -30,7 +30,7 @@ copy miui_tmp\wallpaper\default_lock_wallpaper.jpg assert\lockscreen\ >nul
 copy miui_tmp\wallpaper\default_lock_wallpaper.png assert\lockscreen\ >nul
 
 :icon_port
-echo ÒÆÖ²Í¼±êÖĞ
+echo ç§»æ¤å›¾æ ‡ä¸­
 echo ...................
 xcopy  /e/I/h/r/y/s "tools\xml" "assert\icons\res\xml" >nul
 
@@ -49,8 +49,7 @@ call tools\icon >nul
 )
 
 :done
-echo Íê³É,Çë²é¿´assertÎÄ¼ş¼Ğ
+echo å®Œæˆ,è¯·æŸ¥çœ‹assertæ–‡ä»¶å¤¹
 echo ...................
-echo Ğ»Ğ»Ê¹ÓÃ
+echo è°¢è°¢ä½¿ç”¨
 pause
-
